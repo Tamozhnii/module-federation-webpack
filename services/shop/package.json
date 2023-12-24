@@ -1,0 +1,23 @@
+{
+  "name": "shop",
+  "version": "1.0.0",
+  "main": "./src/index.tsx",
+  "scripts": {
+    "start": "webpack serve --env mode=development",
+    "build": "webpack",
+    "build:dev": "webpack --env mode=development",
+    "build:mobile": "webpack --env mode=production --env platform=mobile",
+    "build:desktop": "webpack --env mode=production --env platform=desktop"
+  },
+  "dependencies": {
+    "@packages/shared": "*",
+    "@packages/build-config": "*",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.20.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15"
+  }
+}
